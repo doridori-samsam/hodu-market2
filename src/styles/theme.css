@@ -1,0 +1,45 @@
+@theme inline {
+  --font-main: var(--font-escore);
+
+  /* 컬러 */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--main-color);
+  --color-primary-light: var(--main-light-color);
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-accent: var(--accent-color);
+
+  /* 폰트 사이즈 */
+  --text-*: initial;
+  --text-base: var(--text-base);
+  --text-2xl: var(--text-2xl);
+  --text-xl: var(--text-xl);
+  --text-lg: var(--text-lg);
+  --text-sm: var(--text-sm);
+  --text-xs: var(--text-xs);
+
+  /* line-height */
+  --text-base--line-height: var(--text-base-line-height);
+  --text-2xl--line-height: var(--text-2xl-line-height);
+  --text-xl--line-height: var(--text-xl-line-height);
+  --text-sm--line-height: var(--text-sm-line-height);
+  --text-xs--line-height: var(--text-xs-line-height);
+
+  /* font-weight */
+  --font-weight-normal: var(--fw-default);
+  --font-weight-bold: var(--fw-bold);
+  --font-weight-light: var(--fw-light);
+
+  /* border radius */
+  --radius-5: var(--radius-5);
+  --radius-10: var(--radius-10);
+
+  /* 반응형 화면 크기 breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}

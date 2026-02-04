@@ -1,15 +1,47 @@
 @import "tailwindcss";
 
+/* Custom styles */
+@import "../styles/theme.css";
+@import "../styles/font.css";
+@import "../styles/base.css";
+@import "../styles/components.css";
+@import "../styles/utilities.css";
+
 :root {
+  --font-escore: "Escoredream", system-ui, -apple-system, sans-serif;
   --background: #ffffff;
   --foreground: #171717;
-}
+  --main-color: oklch(0.5471 0.2491 283.76);
+  --main-light-color: oklch(0.5971 0.235 283.76);
+  --accent-color: #eb5757;
+  --gray-50: #f2f2f2;
+  --gray-100: #c4c4c4;
+  --gray-200: #767676;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* 폰트 사이즈 */
+  --text-base: 1rem;
+  --text-2xl: 2.25rem;
+  --text-xl: 1.875rem;
+  --text-lg: 1.125rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* line-height */
+  --text-base-line-height: 1.5rem;
+  --text-2xl-line-height: 3rem;
+  --text-xl-line-height: 2.5rem;
+  --text-lg-line-height: 1.75rem;
+  --text-sm-line-height: 1.25rem;
+  --text-xs-line-height: 1rem;
+
+  /* font-weight */
+  --fw-default: 300;
+  --fw-bold: 500;
+  --fw-light: 200;
+
+  /* border radius */
+  --radius-5: 5px;
+  --radius-10: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +53,4 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
