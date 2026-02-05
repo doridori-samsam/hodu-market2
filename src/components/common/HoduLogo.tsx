@@ -7,7 +7,7 @@ function HoduLogo() {
       width={200}
       height={100}
       alt="hodu logo"
-      className="h-8 w-auto sm:h-16"
+      className="h-12 w-auto sm:h-16"
       priority
     />
   );
