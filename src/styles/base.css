@@ -1,0 +1,5 @@
+@layer base {
+  html {
+    @apply font-main text-base text-black font-normal;
+  }
+}

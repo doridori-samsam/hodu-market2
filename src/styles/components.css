@@ -1,0 +1,43 @@
+@layer components {
+  /* layouts */
+  .bg-auth {
+    background-color: #e2ddff;
+    /* background: linear-gradient(225deg, #b9aef8c1 40%, #ccbdff 100%); */
+  }
+  .wrapper-auth {
+    @apply w-full;
+    @variant sm {
+      @apply mx-auto max-w-[650px];
+    }
+  }
+  .card-auth {
+    @apply rounded-10 w-full bg-white;
+  }
+  .card-shadow {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  /* buttons */
+  .btn {
+    @apply rounded-5 inline-flex w-full items-center justify-center gap-2 leading-none font-[400] not-disabled:cursor-pointer;
+    @apply disabled:pointer-events-none disabled:bg-gray-100;
+  }
+  .btn-default {
+    @apply h-[60px] max-w-[480px] px-3 py-3;
+  }
+  .btn-small {
+    @apply h-[40px] max-w-[80px] px-2 py-2 text-sm font-normal;
+  }
+  .btn-large {
+    @apply h-[68px] max-w-[220px] px-4 py-4 text-lg font-bold;
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white;
+  }
+  .btn-white {
+    @apply border-1 border-gray-100 bg-white text-gray-200 hover:border-black hover:text-black;
+  }
+  .btn-dark {
+    @apply bg-gray-200 text-white hover:bg-gray-300;
+  }
+}
