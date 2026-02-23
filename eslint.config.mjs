@@ -1,7 +1,7 @@
-import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
 import eslintPluginImport from "eslint-plugin-import";
+import { defineConfig, globalIgnores } from "eslint/config";
 
 const eslintConfig = defineConfig([
   ...nextVitals,
@@ -21,6 +21,7 @@ const eslintConfig = defineConfig([
     settings: {
       "import/resolver": {
         typescript: true,
+        node: true,
       },
     },
     rules: {
